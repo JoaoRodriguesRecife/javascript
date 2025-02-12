@@ -6,12 +6,22 @@
     <title>Document</title>
     <style>
         body{
-            background-color: aquamarine;
+            background-color: rgb(115, 198, 170);
         }
     </style>
 </head>
 <body>
-    <h1>oi tudo bem</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quam quo dolor tempora nobis eum a necessitatibus modi nemo labore cumque odit praesentium excepturi accusamus, ab enim rem provident molestias!</p>
+    <h1>Dom</h1>
+    <p>Lorem ipsum dolor, sit <strong>amet</strong> consectetur adipisicing elit. Repudiandae quam quo dolor !</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum exercitationem maxime corporis at ad molestias a? Hic modi ea dolore nostrum dicta voluptate necessitatibus nobis nisi iste est, harum vero!</p>
+    <div id="msg">------------------------------------------------------------------------------------------</div>
+    <script>
+        var p = window.document.getElementsByTagName('p')[1]
+        document.write('aqui esta '+ p.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
+        
+    </script>
 </body>
 </html>
