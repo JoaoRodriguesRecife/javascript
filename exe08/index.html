@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>somando valores</h1>
+    <input type="number" name="numero1" id="numero1">
+    <input type="number" name="numero2" id="numero2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">resultado</div>
+    <script>
+        function somar(){
+            var n1 = window.document.getElementById('numero1')
+            var n2 = window.document.querySelector('input#numero2')
+            var res = window.document.getElementById('res')
+            var n01 = Number(n1.value)
+            var n02 = Number(n2.value)
+            var s = n01 + n02
+            res.innerHTML = ` a soma de ${n01} e ${n02} e igual a <strong>${s}</strong>`
+            
+        }
+
+    </script>
 </body>
 </html>
