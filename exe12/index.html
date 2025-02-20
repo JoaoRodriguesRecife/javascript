@@ -14,10 +14,11 @@
         function verificar(){
             var pais = window.document.getElementById('pa')
             var resp = window.document.getElementById('res')
-            pai = String(pais.value)
-            resp.innerHTML += 'voce e '
-            if(pai != brasil) {
-                resp.innerHTML += `vc e brasileiro`
+            if(pais != 'brasil') {
+                resp.innerHTML = '<p>vc e brasileiro</p>'
+            } 
+            else {
+                resp.innerHTML = '<p> vc e instrageiro</p>'
             }
 
         }
