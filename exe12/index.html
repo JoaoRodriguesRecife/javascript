@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>seu pais</h1>
+    qual seu pais ? <input type="text" name="pa" id="pa">
+    <input type="button" value="enviar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var pais = window.document.getElementById('pa')
+            var resp = window.document.getElementById('res')
+            pai = String(pais.value)
+            resp.innerHTML += 'voce e '
+            if(pai != brasil) {
+                resp.innerHTML += `vc e brasileiro`
+            }
+
+        }
+            
+    </script>
+
+    
+</body>
+</html>
