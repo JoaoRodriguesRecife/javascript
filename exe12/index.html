@@ -6,22 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>seu pais</h1>
-    qual seu pais ? <input type="text" name="pa" id="pa">
-    <input type="button" value="enviar" onclick="verificar()">
-    <div id="res"></div>
+    <h1>Qual é o seu país de origem?</h1>
+    <input type="text" id="pais" placeholder="Digite o seu país">
+    <button onclick="verificarPais()">Verificar</button>
+    <p id="resposta"></p>
+    
     <script>
-        function verificar(){
-            var pais = window.document.getElementById('pa')
-            var resp = window.document.getElementById('res')
-            if(pais != 'brasil') {
-                resp.innerHTML = '<p>vc e brasileiro</p>'
-            } 
-            else {
-                resp.innerHTML = '<p> vc e instrageiro</p>'
-            }
+        function verificarPais() {
+  var pais = document.getElementById("pais").value.toLowerCase();
 
-        }
+  if (pais === "brasil") {
+    document.getElementById("resposta").innerHTML = "Você é brasileiro!";
+  } else {
+    document.getElementById("resposta").innerHTML = "Você é estrangeiro!";
+  }
+}
             
     </script>
 
