@@ -6,7 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>pais</h1>
+    digite seu pais <input type="text" name="pais1" id="pais1">
+    <input type="submit" value="enviar" onclick="enviar()">
+    <p id="res">resultado</p>
+    <script>
+        function enviar(){
+            var pais = window.document.getElementById('pais1').value
+            var res = window.document.getElementById('res')
+            if(pais === "brasil"){
+                res.innerHTML += '<p> Voce e brasileiro</p>'
+            } else {
+                res.innerHTML += '<p> voce e instrageiro</p>'
+            }
+
+        }
+    </script>
 
     
 </body>
