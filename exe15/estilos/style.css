@@ -1,15 +1,22 @@
 @charset  "UTF-8";
 
 body{
-    background: rgb(70, 137, 218);
+    background: #260d3f;
     font: normal 15pt Arial;
 }
 header{
         color: white;
         text-align: center;
 }
+#msg{
+    text-align: center;
+}
+#foto{
+    text-align: center;
+    margin: 10px;
+}
 section{
-    padding: 15px;
+    padding: 7px;
     background-color: white;
     width: 500px;
     margin: auto;
