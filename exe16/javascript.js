@@ -10,10 +10,14 @@ function verificar() {
         var fsex = document.getElementsByName('sexm')
         var idade = ano - Number(tano.value)
        var genero = ''
+       var img = document.createElement('img')
+       img.setAttribute('id', 'foto')
+
        if (fsex[0].checked){
         genero = 'Homem'
         if (idade >= 0 && idade < 10){
             //criança
+            img.setAttribute('src', 'crianca-menino.png' )
             
         } else if(idade < 21){
             //jovem
