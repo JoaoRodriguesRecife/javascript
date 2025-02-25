@@ -7,15 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <body onload="auto()">
+    <body>
         <header>
-            <h1>Seja bem vindo</h1>
+            <h1>Seja bem vindo:</h1>
+            
         </header>
         <section>
-            <div id="msg">
-                  
+            <div>
+                  <p>ano de nascimento: 
+                  <input type="number" name="textano" id="txtano" min="0">
+                </p>
+                <p>sexo:
+                    <input type="radio" name="sexm" id="sexm" checked >
+                    <label for="sexm">Masculino</label>
+                    <input type="radio" name="sexm" id="sexf">
+                    <label for="sexf">Feminino</label>
+
+                </p>
+                <p><input type="submit" value="verificar" onclick="verificar()"></p>
             </div>
-            <div id="foto">
+            <div id="res">
                
             </div>
     
