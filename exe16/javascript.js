@@ -21,6 +21,8 @@ function verificar() {
             
         } else if(idade < 21){
             //jovem
+            img.setAttribute('src', 'jovem-homem.png')
+
         } else if (idade < 50){
             //adulto
         } else {
