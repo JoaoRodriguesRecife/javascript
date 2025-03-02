@@ -16,6 +16,8 @@ header{
 header > h1 {
     text-align: center;
     font-size: 30px;
+    color: white;
+
     
 }
 section{
@@ -25,7 +27,17 @@ section{
     margin: auto;
     border-radius: 10px;
     box-shadow: 1px 1px 5px;
+
+    
+}
+#dado{
+    color: white;
 }
 div#res{
     background-color: white;
+    padding: 5px;
+}
+footer{
+    color: white;
+    text-align: center;
 }
