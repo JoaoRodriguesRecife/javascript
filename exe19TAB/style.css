@@ -6,10 +6,10 @@ body{
     background-color: darkslategray;
 }
 header{
-    background-color: rgb(80, 141, 141);
+    
     width: 500px;
     margin: auto;
-    padding: 10px;
+    
     margin-bottom: 15px;
     
 }
@@ -27,6 +27,7 @@ section{
     margin: auto;
     border-radius: 10px;
     box-shadow: 1px 1px 5px;
+    color: white;
 
     
 }
